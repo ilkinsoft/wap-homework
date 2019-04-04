@@ -30,7 +30,7 @@ h1.movieName{
     overflow: hidden;
 }
 
-section.reviews{
+.reviews{
     width: 550px;
     float: left;
 }
@@ -87,7 +87,7 @@ section.reviews{
 }
 
 
-section.overview{
+.overview{
     float: right;
     width: 250px;
     background-color: #A2B964;
