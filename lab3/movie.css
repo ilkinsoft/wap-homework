@@ -1,0 +1,120 @@
+body{
+    background-image: url('images/background.png');
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-image: url('images/bannerbg.png');
+    text-align: center;
+    height: 50px;
+}
+
+h1.movieName{
+    font-size: 24pt;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .content{
+    width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+section.reviews{
+    width: 550px;
+    float: left;
+}
+
+.reviews .reviewsHeader{
+    text-align: left;
+    background-image: url('images/rbg.png');
+    height: 83px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+
+.reviews .reviewsHeader > img{
+    vertical-align: bottom;
+}
+
+.reviews .column{
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+    text-align: left;
+}
+
+.reviews .column > p{
+    overflow: auto;
+}
+
+.reviews .column > p:nth-child(odd) {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: left;
+    padding: 6px;
+}
+
+.reviews .column > p > img{
+    vertical-align: text-top;
+    float: left;
+}
+
+.reviews .column > p:nth-child(odd) > img {
+    margin-right: 5px;
+}
+
+.reviews .column > p:nth-child(even) > span {
+    font-style: italic;
+}
+
+.reviews .column > p:nth-child(even) {
+    margin-bottom: 20pt;
+}
+
+
+section.overview{
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+    text-align: left;
+    font-size: 8pt;
+}
+
+.overview > dl {
+    margin: 0 10pt;
+}
+
+.overview > dl > dt {
+    font-weight: bold;
+    margin-top: 10pt;
+}
+
+.content .pager{
+    width: 100%;
+    float: left;
+    background-color: #A2B964;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.validators{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0.5;
+}
