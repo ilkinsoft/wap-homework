@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="tasklist.css" />
+    <title>Task List</title>
+</head>
+
+<body>
+
+    <header>
+        Task list
+    </header>
+
+    <form>
+        <label for="taskName">Task</label><br>
+        <input type="text" id="taskName" name="taskName"><br>
+
+        <label for="date">Required by</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="category">Category</label><br>
+        <select id="category" name="category">
+            <option>Personal</option>
+            <option>Work</option>
+        </select>
+        <br>
+
+        <button type="submit" id="btnSaveTask" >Save Task</button>
+        <button type="button" id="btnClearTask">Clear Task</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Due</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Return library books</td>
+                    <td>2013-10-14</td>
+                    <td>Personal</td>
+                </tr>
+                <tr>
+                    <td>Perform project demo to stackholders</td>
+                    <td>2013-10-14</td>
+                    <td>Work</td>
+                </tr>
+                <tr>
+                    <td>Meet friends for dinner</td>
+                    <td>2013-10-14</td>
+                    <td>Personal</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="btnAddTask">Add Task</button>
+    </form>
+
+    <footer>You have 3 tasks</footer>
+
+</body>
+
+</html>
