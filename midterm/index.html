@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Midterm Program</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div style="color:red;" id="errorBox">
+    </div>
+
+    <form id='bookingForm'>
+        <p>
+            Name
+            <input type="text" id="txtName" pattern="[A-Za-z]{1,}" title="Must be letter." required>
+        </p>
+        <p>
+            Street
+            <input type="text" id="txtStreet" required>
+        </p>
+        <p>
+            State
+            <select id="cmbState" name="cmbState" required>
+                <option value="">Choose one..</option>
+                <option value="californa">CALIFORNIA</option>
+                <option value="newyork">NEW YORK</option>
+                <option value="florida">FLORIDA</option>
+            </select>
+        </p>
+        <p>
+            Zip Code
+            <input type="text" id="txtZipCode" pattern="[0-9]{5}" title="Must be 5 digits." required>
+        </p>
+        <p>
+            How many seats?
+            <input type="number" id="txtSeatCount" required>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Which taxi do you require?</legend>
+
+                <input type="radio" name="taxi" id="radCar"> Car <br><br>
+                <input type="radio" name="taxi" id="radVan"> Van <br><br>
+                <input type="radio" name="taxi" id="radTukTuk"> Tuk Tuk
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Extras</legend>
+
+                <input type="checkbox" name="extras" id="chkBabySeat"> Baby Seat <br><br>
+                <input type="checkbox" name="extras" id="chkWheelchair"> Wheelchair Access <br><br>
+                <input type="checkbox" name="extras" id="chkStockTip"> Stock Tip
+            </fieldset>
+        </p>
+        <p>
+            Special Instructions
+            <textarea id="txtSpecialInstructions" cols="30" rows="5"></textarea>
+        </p>
+
+        <button type="submit" id="btnSubmit">Submit Booking</button>
+    </form>
+</body>
+
+</html>
