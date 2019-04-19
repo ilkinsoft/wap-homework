@@ -3,7 +3,6 @@
 
 <html>
 <body>
-
 <h1>The Number Quiz</h1>
     <p>Your current score is ${quiz.score}</p>
     <p>Guess the next number in the sequence..</p>
