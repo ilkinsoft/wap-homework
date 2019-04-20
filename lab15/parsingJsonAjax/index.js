@@ -4,7 +4,7 @@ $(document).ready(function () {
         $("#div1").empty();
         $.ajax(
             {
-                url: "http://jsonplaceholder.typicode.com/users",
+                url: "https://jsonplaceholder.typicode.com/users",
                 success: function (result) {
                     let i = 0;
                     $.each(result, function () {
@@ -22,7 +22,7 @@ function func(userId) {
     $('.article').remove();
     $.ajax(
         {
-            url: "http://jsonplaceholder.typicode.com/posts?userId=" + userId, // $(this).attr('href'),
+            url: "https://jsonplaceholder.typicode.com/posts?userId=" + userId, // $(this).attr('href'),
             success: function (result) {
                 let i = 0;
                 $.each(result, function () {
